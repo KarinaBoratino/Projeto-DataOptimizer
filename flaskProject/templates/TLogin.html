@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Optimizer - Login</title>
+    <!-- Importando a fonte Orbitron do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/site.css') }}">
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Seção de Login -->
+        <div class="login-section">
+            <div class="logo">
+                <div class="data">DATA</div>
+                <div class="optimizer">OPTIMIZER</div>
+            </div>
+            <h2>Bem-vindo de volta</h2>
+            <b><p>Não tem uma conta?</p></b>
+            <button><a href="/TCad">Cadastrar</a></button>
+        </div>
+
+        <!-- Seção de Cadastro -->
+        <div class="signup-section">
+            <h2>Entrar</h2>
+            <form>
+                <input type="email" black placeholder="E-mail" required>
+                <input type="password" placeholder="Senha" required>
+                <p><a href="">Esqueceu sua senha?</a></p>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

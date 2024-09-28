@@ -1,0 +1,122 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            max-width: 900px;
+            max-height: 380px;
+            height: 100%;
+            width: 100%;
+            background-color: #fff;
+        }
+        /* Estilo da coluna de login */
+        .login-section {
+            width: 50%;
+            background-color: #fff;
+            padding: 40px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .login-section h2 {
+            font-size: 24px;
+            color: #7D00FF;
+        }
+        .login-section p {
+            margin: 20px 0;
+            color: black;
+        }
+        .login-section a {
+
+            text-decoration: none;
+        }
+        .login-section button {
+            background-color: #7D00FF;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        .login-section button a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .login-section button:hover {
+        border: 2px solid #7D00FF;
+        background-color: white;
+        color: #7D00FF;
+        }
+        /* Estilo da seção de cadastro */
+        .signup-section {
+            width: 50%;
+            background-color: #7D00FF;
+            padding: 40px;
+            text-align: center;
+            color: white;
+        }
+        .signup-section h2 {
+            font-size: 24px;
+            color: white;
+            margin-bottom: 20px;
+        }
+        .signup-section a {
+            color: white;
+        }
+
+        .signup-section input {
+            width: 80%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 30px;
+            background-color: #d9bdf2;
+            color: black;
+
+        }
+        .signup-section button {
+            background-color: white;
+            border: none;
+            color: #7D00FF;
+            padding: 10px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .signup-section button:hover {
+        border: 2px solid white;
+        background-color:#7D00FF;
+        color: white;
+        }
+
+        /* Logo */
+        .logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .logo .data {
+            font-size: 30px;
+            font-family: 'Orbitron', sans-serif;
+            color: black;
+            margin-bottom: -5px;
+        }
+        .logo .optimizer {
+            font-size: 30px;
+            font-family: 'Orbitron', sans-serif;
+            color: #7D00FF;
+            letter-spacing: 2px;
+        }

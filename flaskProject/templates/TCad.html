@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Data Optimizer</title>
+    <!-- Importando a fonte Orbitron do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fff;
+        }
+        .container {
+            background-color: #7D00FF;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            text-align: center;
+        }
+        .logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .logo .data {
+            font-size: 30px;
+            font-family: 'Orbitron', sans-serif;
+            color: white;
+            margin-bottom: -5px;
+        }
+        .logo .optimizer {
+            font-size: 30px;
+            font-family: 'Orbitron', sans-serif;
+            color: white;
+            letter-spacing: 2px;
+        }
+        h2 {
+            color: white;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 10px;
+            background-color: #d9bdf2;
+            color: #7D00FF;
+            font-size: 14px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"] {
+            background-color: #e5c4ff;
+        }
+        input[type="checkbox"] {
+            margin-top: 10px;
+            width: auto;
+        }
+        label {
+            color: white;
+            font-size: 12px;
+            display: inline-block;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        button {
+            background-color: #d9bdf2;
+            border: none;
+            color: #7D00FF;
+            padding: 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #b99de6;
+        }
+        .input-group {
+            display: flex;
+            gap: 5px;
+        }
+        .input-group input {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+            <div class="data">DATA</div>
+            <div class="optimizer">OPTIMIZER</div>
+        </div>
+
+        <!-- Formulário de Cadastro -->
+        <h2>Cadastrar</h2>
+        <form>
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="E-mail" required>
+            <div class="input-group">
+                <input type="text" placeholder="DDD" maxlength="2" required>
+                <input type="tel" placeholder="Telefone" required>
+            </div>
+            <input type="password" placeholder="Senha" required>
+            <input type="password" placeholder="Repetir Senha" required>
+
+            <div style="display: flex; align-items: center; justify-content: flex-start;">
+                <input type="checkbox" required>
+                <label for="termos">Aceito todos os termos de uso</label>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+</body>
+</html>

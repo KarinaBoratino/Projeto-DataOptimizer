@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Optimizer</title>
+    <!-- Fonte Orbitron -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .header {
+            background-color: #7D00FF;
+            color: white;
+            padding: 15px 20px;
+            position: relative;
+            height: 80px;
+        }
+        .logo {
+            position: absolute;
+            left: 20px;
+            top: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        .logo .data, .logo .optimizer {
+            font-family: 'Orbitron', sans-serif;
+        }
+        .logo .data {
+            font-size: 24px;
+        }
+        .logo .optimizer {
+            font-size: 24px;
+            color: white;
+            letter-spacing: 2px;
+        }
+        .menu {
+            text-align: center;
+            padding-top: 10px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            margin: 0 15px;
+        }
+        .login-button {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            background-color: white;
+            color: #7D00FF;
+            padding: 5px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .hero-section {
+            background: url('imagens/bgInicial.png') no-repeat center center;
+            background-size: cover;
+            padding: 100px 20px;
+            text-align: center;
+            color: white;
+        }
+        .hero-section h1 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .functions-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .functions-section h2 {
+            color: #333;
+            font-size: 26px;
+            margin-bottom: 40px;
+        }
+        .functions-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .function-box {
+            background-color: #7D00FF;
+            color: white;
+            padding: 20px;
+            width: 200px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .function-box h3 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        .function-box p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <div class="header">
+        <!-- Logo -->
+        <div class="logo">
+            <div class="data">DATA</div>
+            <div class="optimizer">OPTIMIZER</div>
+        </div>
+
+        <!-- Menu -->
+        <div class="menu">
+            <a href="#">SOBRE NÓS</a>
+            <a href="#">PLANOS</a>
+            <a href="#">CONTATOS</a>
+             <a href="/teste">teste</a>
+        </div>
+
+        <!-- Botão de Login -->
+        <a href="/login" class="login-button">ENTRAR</a>
+    </div>
+
+    <!-- Seção Hero -->
+    <div class="hero-section">
+        <h1>MAXIMIZANDO EFICIÊNCIA, OTIMIZANDO RESULTADOS</h1>
+    </div>
+
+    <!-- Seção de Funções -->
+    <div class="functions-section">
+        <h2>Funções</h2>
+        <div class="functions-container">
+            <!-- Caixa 1 -->
+            <div class="function-box">
+                <h3>1</h3>
+                <p>Monitoramento Contínuo. Acompanhamento em tempo real de métricas críticas.</p>
+            </div>
+
+            <!-- Caixa 2 -->
+            <div class="function-box">
+                <h3>2</h3>
+                <p>Análise Preditiva. Previsão de problemas futuros e recomendações de soluções.</p>
+            </div>
+
+            <!-- Caixa 3 -->
+            <div class="function-box">
+                <h3>3</h3>
+                <p>Otimização Automática. Ajustes automáticos em queries e índices para melhor desempenho. </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
