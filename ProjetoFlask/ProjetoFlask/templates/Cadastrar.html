@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Data Optimizer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Cadastrar.css') }}">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <div class="data">DATA</div>
+            <div class="optimizer">OPTIMIZER</div>
+        </div>
+
+        <h2>Cadastrar</h2>
+        <form id="cadastroForm" action="/cadastrar" method="POST">
+            <input type="text" name="nome" placeholder="Nome" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <div class="input-group">
+                <input type="text" name="ddd" placeholder="DDD" maxlength="2" required>
+                <input type="tel" name="telefone" placeholder="Telefone" required>
+            </div>
+            <input type="password" name="senha" placeholder="Senha" required>
+
+            <div style="display: flex; align-items: center; justify-content: flex-start;">
+                <input type="checkbox" required name="termos">
+                <label for="termos">Aceito todos os termos de uso</label>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+   <script src="{{ url_for('static', filename='js/cadastrar.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.container {
+    background-color: #7D00FF;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo .data {
+    font-size: 30px;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    margin-bottom: -5px;
+}
+
+.logo .optimizer {
+    font-size: 30px;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #d9bdf2;
+    color: #7D00FF;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    background-color: #e5c4ff;
+}
+
+input[type="checkbox"] {
+    margin-top: 10px;
+    width: auto;
+}
+
+label {
+    color: white;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+button {
+    background-color: #d9bdf2;
+    border: none;
+    color: #7D00FF;
+    padding: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #b99de6;
+}
+
+.input-group {
+    display: flex;
+    gap: 5px;
+}
+
+.input-group input {
+    flex: 1;
+}

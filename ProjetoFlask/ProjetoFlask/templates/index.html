@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Optimizer - Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Login.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Biblioteca para alertas -->
+</head>
+
+<body id="body">
+
+    <div class="container">
+        <div class="login-section">
+            <div id="message"></div>
+            <div class="logo">
+                <div class="data">DATA</div>
+                <div class="optimizer">OPTIMIZER</div>
+            </div>
+            <h2>Bem-vindo de volta</h2>
+            <b><p>Não tem uma conta?</p></b>
+            <button><a href="/cadastrar">Cadastrar</a></button>
+        </div>
+
+        <div class="signup-section">
+            <h2>Entrar</h2>
+            <form id="loginForm" method="POST" action="/login">
+                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="password" name="senha" placeholder="Senha" required>
+                <p><a href="#">Esqueceu sua senha?</a></p>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+        <a href="/conexao">Testar conexão com o servidor</a>
+        <a href="/conexaomysql">Testar conexão MySQL</a>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/login.js') }}"></script>
+</body>
+</html>
